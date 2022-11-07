@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@font-face {
+    font-family: Norse-Bold;
+    src: url(assets/fonts/Norse-Bold.otf);
+}
+
+:root {
+    --logo-font: 'Norse-Bold', serif;
+    --main-font: 'Inter', sans-serif;
+
+    --color1: #000000;
+    --color2: #ffffff;
+    --color3: #596D48;
+
+    --hover-color: #99BF4B;
+
+    --input-field-bg: #ffffff;
+    --right-content-bg: #F9FAFB;
+
+    --input-bg: #FFFEFE;
+    --input-stroke: #E5E7EB;
+    --input-error: #B91C1C;
+    --input-focus: #1D4ED8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: var(--main-font);
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+}
