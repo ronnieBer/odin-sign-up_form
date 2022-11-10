@@ -132,6 +132,7 @@ body {
 
 fieldset {
     max-width: 695px;
+    border: 0;
     padding: 0;
 }
 
