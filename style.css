@@ -219,3 +219,38 @@ input[type = "submit"]:hover {
 .log-in a:hover {
     color: #99BF4B;
 }
+
+/* Mobile Responsive */
+@media only screen and (max-width: 744px) {
+
+    .content {
+        flex-flow: column wrap;
+    }
+
+    /* LEFT SIDE CONTENTS */
+    .left-content {
+        width: 100vw;
+        height: 30vh;
+    }
+
+    .logo {
+        margin-top: 7vh;
+    }
+
+    /* RIGHT SIDE CONTENTS */
+    .right-content {
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        width: 100vw;
+        height: 70vh;
+    }
+
+    .input-field {
+        width: 100vw;
+    }
+
+    input {
+        width: 35vw;
+    }
+
+}
