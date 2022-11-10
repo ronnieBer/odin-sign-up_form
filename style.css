@@ -254,3 +254,85 @@ input[type = "submit"]:hover {
     }
 
 }
+
+@media only screen and (max-width: 576px) {
+
+    /* LEFT SIDE CONTENTS */
+    .left-content {
+        height: 25vh;
+    }
+
+    .left-content > p {
+        font-size: .65rem;
+    }
+
+    .logo {
+        padding: 10px;
+        margin-top: 2.5vh;
+    }
+
+    .logo > img {
+        height: 85px;
+    }
+
+    .logo > h1 {
+        font-size: 4.3rem;
+    }
+
+    /* RIGHT SIDE CONTENTS */
+    .right-content {
+        align-items: center;
+    }
+
+    .input-field {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 47px;
+        margin: 50px 0 35px;
+    }
+
+    .right-text, .input-field > p {
+        font-size: 1.2rem;
+    }
+
+    .input-field > p {
+        padding-right: 0;
+    }
+
+    .right-text > p {
+        padding-top: 29px;
+        text-align: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    fieldset {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    label {
+        margin: 1.4rem 0 0 0;
+        text-align: center;
+    }
+
+    input {
+        width: 60vw;
+    }
+
+    input[type = "submit"] {
+        margin-left: 0;
+    }
+
+    .log-in {
+        font-size: .9rem;
+        padding: 32px 0;
+    }
+
+}
