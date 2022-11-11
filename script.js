@@ -31,3 +31,23 @@ firstName.addEventListener('input', (e) => {
     return true;
 
 });
+
+lastName.addEventListener('input', (e) => {
+
+    if (lastName.value.length == 0) {
+        errLName.innerText = 'Last name is required.';
+        lastName.style.border = '2px solid #B91C1C';
+        return false;
+    }
+
+    if (!lastName.value.match(/^[A-Za-z]*$/)) {
+        errLName.innerText = 'Alpha letters only';
+        lastName.style.border = '2px solid #B91C1C';
+        return false;
+    }
+
+    errLName.innerText = '';
+    lastName.style.border = '2px solid #E5E7EB';
+    return true;
+
+});
