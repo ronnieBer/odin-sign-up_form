@@ -71,3 +71,29 @@ email.addEventListener('input', (e) => {
     return true;
 
 });
+
+phoneNumber.addEventListener('input', (e) => {
+
+    if (phoneNumber.value.length == 0) {
+        errPNum.innerText = 'Phone no. is required.';
+        phoneNumber.style.border = '2px solid #B91C1C';
+        return false;
+    }
+
+    if (phoneNumber.value.length < 10) {
+        errPNum.innerText = 'Phone no. should be 10 digit.';
+        phoneNumber.style.border = '2px solid #B91C1C';
+        return false;
+    }
+
+    if (!phoneNumber.value.match(/^[\d]{10}$/)) {
+        errPNum.innerText = 'Enter digits only.';
+        phoneNumber.style.border = '2px solid #B91C1C';
+        return false;
+    }
+
+    errPNum.innerText = '';
+    phoneNumber.style.border = '2px solid #E5E7EB';
+    return true;
+
+});
