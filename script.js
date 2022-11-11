@@ -123,3 +123,35 @@ password.addEventListener('input', (e) => {
     return true;
 
 });
+
+confirmPassword.addEventListener('input', (e) => {
+
+    if (confirmPassword.value.length == 0) {
+        errConfirmPw.innerText = '*Confirm Password is required.';
+        confirmPassword.style.border = '2px solid #B91C1C';
+        return false;
+    }
+
+    if (!confirmPassword.value.match(/^.{8,12}$/)) {
+        errConfirmPw.innerText = '*Password must be 8-12 characters.';
+        confirmPassword.style.border = '2px solid #B91C1C';
+        return false;
+    }
+
+    if (!confirmPassword.value.match(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,12}$/)) {
+        errConfirmPw.innerText = '*Password must have: (A-Z, a-z, 0-9).';
+        confirmPassword.style.border = '2px solid #B91C1C';
+        return false;
+    }
+
+    if (confirmPassword.value !== password.value) {
+        errConfirmPw.innerText = '*Password do not match.';
+        confirmPassword.style.border = '2px solid #B91C1C';
+        return false;
+    }
+
+    errConfirmPw.innerText = '';
+    confirmPassword.style.border = '2px solid #E5E7EB';
+    return true;
+
+});
