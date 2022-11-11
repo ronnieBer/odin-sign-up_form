@@ -97,3 +97,29 @@ phoneNumber.addEventListener('input', (e) => {
     return true;
 
 });
+
+password.addEventListener('input', (e) => {
+
+    if (password.value.length == 0) {
+        errPw.innerText = '*Password is required.';
+        password.style.border = '2px solid #B91C1C';
+        return false;
+    }
+
+    if (!password.value.match(/^.{8,12}$/)) {
+        errPw.innerText = '*Password must be 8-12 characters.';
+        password.style.border = '2px solid #B91C1C';
+        return false;
+    }
+
+    if (!password.value.match(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,12}$/)) {
+        errPw.innerText = '*Password must have: (A-Z, a-z, 0-9).';
+        password.style.border = '2px solid #B91C1C';
+        return false;
+    }
+
+    errPw.innerText = '';
+    password.style.border = '2px solid #E5E7EB';
+    return true;
+
+});
