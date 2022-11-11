@@ -19,6 +19,15 @@ const formatName = (value) => {
     return nameFormat;
 };
 
+const formatPhoneNum = (value) => {
+    const areaCode = value.slice(0,3);
+    const prefix = value.slice(3,6);
+    const lineNumber = value.slice(6,10);
+    const phoneNumberFormat = `(${areaCode}) ${prefix}-${lineNumber}`;
+    
+    return phoneNumberFormat;
+}
+
 firstName.addEventListener('input', (e) => {
 
     if (firstName.value.length == 0) {
@@ -102,6 +111,8 @@ phoneNumber.addEventListener('input', (e) => {
         phoneNumber.style.border = '2px solid #B91C1C';
         return false;
     }
+
+    phoneNumber.value = formatPhoneNum(phoneNumber.value);
 
     errPNum.innerText = '';
     phoneNumber.style.border = '2px solid #E5E7EB';
