@@ -51,3 +51,23 @@ lastName.addEventListener('input', (e) => {
     return true;
 
 });
+
+email.addEventListener('input', (e) => {
+
+    if (email.value.length == 0) {
+        errEmail.innerText = 'Email is required.';
+        email.style.border = '2px solid #B91C1C';
+        return false;
+    }
+
+    if (!email.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+        errEmail.innerText = 'Email invalid.';
+        email.style.border = '2px solid #B91C1C';
+        return false;
+    }
+
+    errEmail.innerText = '';
+    email.style.border = '2px solid #E5E7EB';
+    return true;
+
+});
