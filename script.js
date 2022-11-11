@@ -12,6 +12,13 @@ const errPNum = document.querySelector('#err-p-num');
 const errPw = document.querySelector('#err-pw');
 const errConfirmPw =document.querySelector('#err-confirm-pw');
 
+const formatName = (value) => {
+    const name = value;
+    const nameFormat = name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
+
+    return nameFormat;
+};
+
 firstName.addEventListener('input', (e) => {
 
     if (firstName.value.length == 0) {
@@ -25,6 +32,8 @@ firstName.addEventListener('input', (e) => {
         firstName.style.border = '2px solid #B91C1C';
         return false;
     }
+
+    firstName.value = formatName(firstName.value)
 
     errFName.innerText = '';
     firstName.style.border = '2px solid #E5E7EB';
@@ -45,6 +54,8 @@ lastName.addEventListener('input', (e) => {
         lastName.style.border = '2px solid #B91C1C';
         return false;
     }
+
+    lastName.value = formatName(lastName.value)
 
     errLName.innerText = '';
     lastName.style.border = '2px solid #E5E7EB';
