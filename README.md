@@ -13,3 +13,5 @@ In this first repository from The Odin Project Full Stack JavaScript curriculum 
 ## Sign-Up Form Feature
 - Name Formatter
 - Phone Number Formatter
+
+## :point_right:[Live Demo](https://ronnieber.github.io/odin-sign-up_form/)
