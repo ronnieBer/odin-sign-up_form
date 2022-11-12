@@ -16,11 +16,12 @@ In this first repository from The Odin Project Full Stack JavaScript curriculum 
 - Name Formatter
 - Phone Number Formatter
 
-## :point_right:[Live Demo](https://ronnieber.github.io/odin-sign-up_form/)
-
 
 #### Reflection/Outcome
 As I followed the instruction and completed the basic setup of this Sign-Up Form project in HTML and CSS, I decided to go further by adding a JavaScript custom validation. I used JS RegExp in the custom validation to ensure that the user will input the correct information in the input field.
+
+
+#### :point_right: Sign-Up Form [Live Demo](https://ronnieber.github.io/odin-sign-up_form/)
 
 
 #### Image Credit
