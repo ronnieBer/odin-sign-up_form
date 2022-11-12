@@ -21,3 +21,7 @@ In this first repository from The Odin Project Full Stack JavaScript curriculum 
 
 #### Reflection/Outcome
 As I followed the instruction and completed the basic setup of this Sign-Up Form project in HTML and CSS, I decided to go further by adding a JavaScript custom validation. I used JS RegExp in the custom validation to ensure that the user will input the correct information in the input field.
+
+
+#### Image Credit
+- Background Image - Photo by [Halie West](https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
