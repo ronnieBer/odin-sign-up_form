@@ -9,3 +9,7 @@ In this first repository from The Odin Project Full Stack JavaScript curriculum 
 - Know how to explain what form validations are
 - Know how to use a few of the basic built-in HTML validations
 - Know how to build custom validations
+
+## Sign-Up Form Feature
+- Name Formatter
+- Phone Number Formatter
