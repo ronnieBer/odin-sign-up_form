@@ -24,5 +24,5 @@ As I followed the instruction and completed the basic setup of this Sign-Up Form
 #### :point_right: Sign-Up Form [Live Demo](https://ronnieber.github.io/odin-sign-up_form/)
 
 
-#### Image Credit
+### Image Credit
 - Background Image - Photo by [Halie West](https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
